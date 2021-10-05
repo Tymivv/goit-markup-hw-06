@@ -398,9 +398,7 @@
             <div class="futer-forn">
                 <h2 class="futer-forn-title">Подпишитесь на рассылку</h2>
                 <form action="#" class="futer-forn-mailing">
-                    <div class="online-input-wrapper">
-                        <input type="email" name="user-email" placeholder="E-mail" required class="futer-forn-input" />
-                    </div>
+                    <input type="email" name="user-email" placeholder="E-mail" required class="futer-forn-input" />
                     <button type="submit" class="futer-forn-button">
                         Подписаться
                         <svg class="close-icon" width="24" height="24">
@@ -411,6 +409,11 @@
             </div>
         </div>
     </footer>
+
+
+    <!-------------------- модельне вікно ---------------------->
+
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" data-modal-close class="btn-close">
@@ -418,6 +421,59 @@
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form action="#">
+                <div class="human-data">
+                    <label for="user-name" class="form-label">Ваше имя</label>
+                    <div class="input-wrapper">
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/sprite.svg#icon-personname"></use>
+                        </svg>
+                        <input type="text" name="user-name" id="user-name" class="form-input" />
+                    </div>
+                </div>
+
+
+
+
+                <div class="human-data">
+                    <label for="user-name" class="form-label">Ваше имя</label>
+                    <div class="input-wrapper">
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/sprite.svg#icon-phonename"></use>
+                        </svg>
+                        <input type="text" name="user-name" id="user-name" class="form-input" />
+                    </div>
+                </div>
+
+                <div class="human-data">
+                    <label for="user-name" class="form-label">Ваше имя</label>
+                    <div class="input-wrapper">
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/sprite.svg#icon-emailname"></use>
+                        </svg>
+                        <input type="text" name="user-name" id="user-name" class="form-input" />
+                    </div>
+                </div>
+
+                <div class="human-data">
+                    <label for="user-text" class="form-label">Коммент</label>
+                    <textarea name="user-text" id="user-text" class="text-coment" placeholder="Введите текст"></textarea>
+                </div>
+
+                <input type="checkbox" class="form-checkbox visually-hidden" name="policy" id="policy" />
+                <label for="policy" class="check-text">
+                    <span class="check-item">
+                        <svg class="check-icon" width="16" height="15">
+                            <use href="./images/sprite.svg#icon-Vectori"></use>
+                        </svg>
+                    </span>
+                    Соглашаюсь с рассылкой и принимаю <a href="" class="link-check"> Условия договора</a></label>
+            
+                <button type="submit" class="form-btn"> 
+                    Отправить
+                </button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
