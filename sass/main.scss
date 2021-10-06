@@ -172,8 +172,6 @@ position: relative;
 .list .link:hover::after {
   opacity: 1;
   transform: scale(1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .mail {
@@ -189,8 +187,6 @@ position: relative;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .address-list-item{
   display: inline-flex;
@@ -210,8 +206,6 @@ position: relative;
 .telef-icon {
   margin-right: 10px;
   fill: var(--primary-text-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .site-nav,
 .mail,
@@ -298,8 +292,6 @@ font-weight: 700;
 .advantages-img{
   padding: 25px 100px;
   margin-bottom: 30px;
-  background: #F5F4FA;
-border-radius: 4px
 }
 .advantages-title {
   color: var(--title-text-color);
@@ -312,7 +304,6 @@ border-radius: 4px
 
 .advantages-box {
   margin-left: 30px;
-
 }
 
 .advantages-box:first-child {
@@ -356,7 +347,6 @@ border-radius: 4px
   position:absolute;
 width: 100%;
   font-size: 14px;
-  font-weight: 700;
 line-height: 1.14;
 text-align: center;
 letter-spacing: 0.03em;
@@ -775,7 +765,8 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 }
 
 .modal {
-
+    width: 528px;
+    min-height: 581px;
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -783,8 +774,8 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
- 
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .btn-close {
@@ -797,6 +788,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     top: 8px;
     right: 8px;
     cursor: pointer;
+    box-sizing: border-box;
     display: flex;
      align-items: center;
     
@@ -816,7 +808,7 @@ letter-spacing: 0.03em;
 font-weight: bold;
 
 color: var(--title-text-color);
-
+margin-top: 40px;
 margin-bottom: 12px;
 
 }
@@ -851,10 +843,9 @@ outline: none;
 .form-input:focus {
     border-color: var(--text-line);
 }
-/*--------------------------------------------------*/
+
 .form-input:focus + .form-icon {
     fill: var(--text-line);
-   
 }
 
 
@@ -898,7 +889,6 @@ color: rgba(117, 117, 117, 0.5);
     font-size: 14px;
     color: var(--fifth-text-color);
     display: flex;
-    align-items: center;
     position: relative;
     margin-bottom: 20px;
 }
@@ -920,7 +910,8 @@ color: rgba(117, 117, 117, 0.5);
 }
 
 .form-btn {
-
+  width: 200px;
+  height: 50px;  
   display: block;
     margin: 0 auto;
   font-weight: bold;
@@ -934,14 +925,11 @@ color: #FFFFFF;
 background: #188CE8;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-border: none;
-padding: 10px 55px;
-cursor: pointer;
+margin-bottom: 40px;
 
 }
 .link-check {
   color: var(--text-line);
-  margin-left: 5px;
 }
 
 .text-coment{
